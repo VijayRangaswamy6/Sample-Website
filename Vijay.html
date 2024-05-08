@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: blue; font-size: 24px;">Ai for All</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow-y: auto; /* Enable scrolling */
+            scroll-behavior: smooth; /* Smooth scrolling behavior */
+            background-image: url('https://cdn.dribbble.com/users/1523313/screenshots/16134521/media/3975730626bdae63cf9b25d3b634bac3.gif');
+            background-size: 100% auto; /* Set background size to 90% of its original size */
+            background-position: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: fadeIn 1s ease-out; /* Fade-in animation */
+        }
+
+        nav {
+            background-color: blue; /* Changed to blue */
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s; /* Subtle transition */
+            animation: slideDown 1s ease-out; /* Slide-down animation */
+        }
+
+        .logo img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff; /* Changed to white */
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s; /* Subtle transition */
+        }
+
+        .nav-links a:hover {
+            background-color: #fff; /* Changed to white */
+            color: blue; /* Changed to blue */
+        }
+
+        .notification-section {
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            animation: slideLeft 1s ease-out; /* Slide-left animation */
+        }
+
+        .content-section {
+            padding: 0 20px;
+            color: rgb(251, 255, 0);
+            text-align: center;
+            animation: fadeIn 1s ease-out; /* Fade-in animation */
+        }
+
+        .ai-new-card {
+            background-color: #1a1a1a;
+            color: rgb(255, 238, 5);
+            border-radius: 10px;
+            padding: 20px;
+            width: 350px;
+            overflow-y: auto;
+            height: 700px; /* Decreased height */
+            margin-left: auto;
+            margin-right: 20px;
+            animation: slideRight 1s ease-out; /* Slide-right animation */
+        }
+
+        .footer-section {
+            background-color: rgba(255, 255, 255, 0.678);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            animation: fadeIn 1s ease-out; /* Fade-in animation */
+        }
+
+        .footer-section h3 {
+            margin-bottom: 10px;
+            color: blue;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 5px;
+        }
+
+        .social-media-links svg {
+            vertical-align: middle;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideLeft {
+            from {
+                transform: translateX(50px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideRight {
+            from {
+                transform: translateX(-50px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="https://cdn.dribbble.com/users/1523313/screenshots/16134521/media/3975730626bdae63cf9b25d3b634bac3.gif" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactSection">Contact</a>
+            </div>
+        </nav>
+        <div class="notification-section">
+            <marquee direction="left" scrollamount="4">
+                <h1><p class="welcome-msg">Welcome to the World of AI</p></h1>
+            </marquee>
+        </div>
+        <div class="content-section">
+            <h2 class="content-section-heading">Human-Robot Interaction where Psychology meets Data Science</h2>
+            <div class="ai-new-card">
+                <h3 class="news-card-heading">AI Latest News</h3>
+                <marquee direction="up" scrollamount="3" class="ai-news" onmouseover="this.stop()" onmouseout="this.start()">
+                    <P>Meta AI Event In London: Open-Source AI, Disinformation, And Llama 3</P>
+                        <p>200+ artists warn about generative AI meddling in music</p>
+                        <p>Artificial Intelligence's 'Insatiable' Energy Needs Not Sustainable</p>
+                        <p>Google Expands In-House Chip Efforts in Costly AI Battle</p>
+                        <p>Jack Altman's Venture Fund Launches Accelerator for Enterprise AI Startups</p>
+                        <p> Prompt in progress: GenAI text-to-code tools boost productivity </p>
+                        <p>Social Order Could Collapse in AI Era, Two Top Japan Companies Say</p>
+                        <p>Generative AI Isnt Ubiquitous in the Business World—at Least Not Yet</p>
+                        <p>OpenAI Not-So-Secret Weapon in Winning Business Customers? ChatGPT</p>
+                        <p>Investors in Talks to Help Elon Musk xAI Raise $3 Billion, Adding to Industry Arms Race</p>
+                </marquee>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="courses-container">
+                <h3>Courses</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Machine Learning</li>
+                    <li>Computer Vision</li>
+                    <li>Psychology</li>
+                    <li>Neural Networks</li>
+                </ul>
+                <a href="https://www.w3schools.com/cssref/pr_list-style-type.php">ref : w3schools.com</a>
+            </div>
+            <div id="contactSection" class="contact-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>RUAS</li>
+                    <li>MATHIKERE</li>
+                    <li>123456</li>
+                    <li>xyz@msruas.ac.in</li>
+                </ul>
+            </div>
+            <div class="programs-section">
+                <h3>Programs offered</h3>
+                <ul>
+                    <li>Data Sciences and Analytics</li>
+                    <li>Psychology</li>
+                    <li>Economics</li>
+                </ul>
+            </div>
+            <div class="social-media-links">
+                <h3>Social Media Links</h3>
+                <p class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg> Linkedin</p>
+                <p>Facebook</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
