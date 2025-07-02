@@ -28,6 +28,6 @@ Welcome to **AI for All**, a sleek and responsive sample website built using **H
 - **CSS3** – Styling, animation, responsiveness  
 - **JavaScript (basic)** – For interactive marquee and hover effects
 
----
+
 
 
