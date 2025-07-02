@@ -31,5 +31,3 @@ Welcome to **AI for All**, a sleek and responsive sample website built using **H
 ---
 
 
-## 📁 Folder Structure
-
